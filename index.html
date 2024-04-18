@@ -15,51 +15,77 @@
 
 <body>
     <main>
-        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <h2 class="text-center pt-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-        <div>
-            <div>
-                <label for="km-input">Km da percorrere:</label>
-                <input id="km-input" name="km" type="number" placeholder="Inserire i km da percorrere">
-            </div>
-            <div>
-                <label for="name-input">Nome e Cognome:</label>
-                <input id="name-input" name="name" type="text" placeholder="Inserire Nome e Cognome">
-            </div>
-            <div>
-                <label for="age-input">Fascia d'eta`:</label>
-                <input id="age-input" name="age" type="number" placeholder="Inserire eta`">
-            </div>
-            <div>
-                <button id="click-generate">Genera</button>
-                <button id="click-delete">Cancella</button>
+        <div class="container-fluid">
+            <div class="container bg-white radius-1">
+                <div class="row p-3">
+                    <div class="col-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <label for="km-input">Km da percorrere:</label>
+                            <input id="km-input" name="km" type="number" placeholder="Inserire i km da percorrere">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <label for="name-input">Nome e Cognome:</label>
+                            <input id="name-input" name="name" type="text" placeholder="Inserire Nome e Cognome">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <label for="age-input">Fascia d'eta`:</label>
+                            <input id="age-input" name="age" type="number" placeholder="Inserire eta`">
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-12 justify-content-center d-flex gap-3">
+                        <button id="click-generate">Genera</button>
+                        <button id="click-delete">Cancella</button>
+                    </div>
+                </div>
             </div>
         </div>
 
+        </div>
 
-        <div>
-            <h2>IL TUO BIGLIETTO</h2>
-            <div>
-                <span>NOME PASSEGGERO</span>
-                <span id="passeggero"></span>
-            </div>
-            <div>
-                <span>Offerta</span>
-                <span id="offerta">Biglietto Standard</span>
-            </div>
-            <div>
-                <span>Carrozza</span>
-                <span id="carrozza"></span>
-            </div>
-            <div>
-                <span>Codice CP</span>
-                <span id="cp-code"></span>
-            </div>
-            <div>
-                <span>Costo biglietto</span>
-                <span id="costo"></span>
+
+
+        <h2 class="text-center pt-4">IL TUO BIGLIETTO</h2>
+
+        <div class="container-fluid">
+            <div class="container bg-white radius-1 pb-3">
+                <div class="row p-3">
+                    <div class="col-12">
+                        <h5 class="fw-bold">DETTAGLIO PASSEGGERO</h5>
+                    </div>
+                </div>
+                <div class="row m-3 border-n">
+                    <div class="col-4 d-flex flex-column bg-secondary py-3">
+                        <h5 class="fw-bold">NOME PASSEGGERO</h5>
+                        <span id="passeggero" class="fw-bold"></span>
+                    </div>
+                    <div class="col-2 d-flex flex-column py-3">
+                        <span class="fw-bold pb-5">Offerta</span>
+                        <span id="offerta">Biglietto Standard</span>
+                    </div>
+                    <div class="col-2 d-flex flex-column py-3">
+                        <span class="fw-bold pb-5">Carrozza</span>
+                        <span id="carrozza"></span>
+                    </div>
+                    <div class="col-2 d-flex flex-column py-3">
+                        <span class="fw-bold pb-5">Codice CP</span>
+                        <span id="cp-code"></span>
+                    </div>
+                    <div class="col-2 d-flex flex-column py-3">
+                        <span class="fw-bold pb-5">Costo biglietto</span>
+                        <span id="costo"></span>
+                    </div>
+                </div>
             </div>
         </div>
+
 
 
     </main>

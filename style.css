@@ -1,4 +1,4 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,27 +6,27 @@
 
 body {
     font-family: sans-serif;
-}
-
-main {
-    background-color: orangered;
-    padding: 1rem;
-}
-
-div {
-    padding: 1rem;
-
     background-color: orange;
 }
 
-#km,
-#anni,
-#costo {
-    font-weight: bold;
+h2 {
+    color: white;
 }
 
+button {
+    border: 1px solid orange;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
 
-h1 {
-    color: white;
-    padding: 1rem;
-} */
+input {
+    padding: 0.5rem;
+}
+
+.radius-1 {
+    border-radius: 1rem;
+}
+
+.border-n {
+    border: 1px solid black;
+}

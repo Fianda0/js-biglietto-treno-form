@@ -48,17 +48,11 @@ btnGenerate.addEventListener('click', function () {
 
     document.getElementById('passeggero').innerText = nameInput.value
 
-    document.getElementById('carrozza').innerText = (Math.floor(Math.random() * 11))
+    document.getElementById('carrozza').innerText = (Math.floor(Math.random() * (11 - 1)) + 1)
 
-    document.getElementById('cp-code').innerText = (Math.floor(Math.random() * 10000))
+    document.getElementById('cp-code').innerText = (Math.floor(Math.random() * (100000 - 10000)) + 10000)
 
     document.getElementById('costo').innerText = (`${prezzoFinale.toFixed(2)}€`)
-
-
-    console.log('km ', kmInput.value)
-    console.log('nome ', nameInput.value)
-    console.log('eta ', ageInput.value)
-    console.log('prezzo ', prezzoFinale.toFixed(2))
 })
 
 btnDelete.addEventListener('click', function () {
@@ -76,11 +70,5 @@ btnDelete.addEventListener('click', function () {
     document.getElementById('cp-code').innerText = ''
 
     document.getElementById('costo').innerText = ''
-
-
-    console.log('km ', kmInput.value)
-    console.log('nome ', nameInput.value)
-    console.log('eta ', ageInput.value)
-    console.log('prezzo ', prezzoFinale)
 })
 
