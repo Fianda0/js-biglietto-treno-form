@@ -50,6 +50,10 @@ btnGenerate.addEventListener('click', function () {
 
     document.getElementById('carrozza').innerText = (Math.floor(Math.random() * 11))
 
+    document.getElementById('cp-code').innerText = (Math.floor(Math.random() * 10000))
+
+    document.getElementById('costo').innerText = (`${prezzoFinale.toFixed(2)}€`)
+
 
     console.log('km ', kmInput.value)
     console.log('nome ', nameInput.value)
@@ -64,6 +68,15 @@ btnDelete.addEventListener('click', function () {
     document.getElementById('age-input').value = ''
 
     prezzoFinale = 0;
+
+    document.getElementById('passeggero').innerText = ''
+
+    document.getElementById('carrozza').innerText = ''
+
+    document.getElementById('cp-code').innerText = ''
+
+    document.getElementById('costo').innerText = ''
+
 
     console.log('km ', kmInput.value)
     console.log('nome ', nameInput.value)
