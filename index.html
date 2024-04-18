@@ -15,23 +15,53 @@
 
 <body>
     <main>
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
         <div>
-            <label for="km-input">Km da percorrere:</label>
-            <input id="km-input" name="km" type="number" placeholder="Inserire i km da percorrere">
+            <div>
+                <label for="km-input">Km da percorrere:</label>
+                <input id="km-input" name="km" type="number" placeholder="Inserire i km da percorrere">
+            </div>
+            <div>
+                <label for="name-input">Nome e Cognome:</label>
+                <input id="name-input" name="name" type="text" placeholder="Inserire Nome e Cognome">
+            </div>
+            <div>
+                <label for="age-input">Fascia d'eta`:</label>
+                <input id="age-input" name="age" type="number" placeholder="Inserire eta`">
+            </div>
+            <div>
+                <button id="click-generate">Genera</button>
+                <button id="click-delete">Cancella</button>
+            </div>
         </div>
+
+
         <div>
-            <label for="name-input">Nome e Cognome:</label>
-            <input id="name-input" name="name" type="text" placeholder="Inserire Nome e Cognome">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div>
+                <span>NOME PASSEGGERO</span>
+                <span id="passeggero"></span>
+            </div>
+            <div>
+                <span>Offerta</span>
+                <span id="offerta">Biglietto Standard</span>
+            </div>
+            <div>
+                <span>Carrozza</span>
+                <span id="carrozza"></span>
+            </div>
+            <div>
+                <span>Codice CP</span>
+                <span id="cp-code"></span>
+            </div>
+            <div>
+                <span>Costo biglietto</span>
+                <span id="Costo"></span>
+            </div>
         </div>
-        <div>
-            <label for="age-input">Fascia d'eta`:</label>
-            <input id="age-input" name="age" type="number" placeholder="Inserire eta`">
-        </div>
-        <div>
-            <button id="click-generate">Genera</button>
-            <button id="click-delete">Cancella</button>
-        </div>
+
+
     </main>
     <script src="./main.js"></script>
 </body>

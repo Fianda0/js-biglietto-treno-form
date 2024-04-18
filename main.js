@@ -46,10 +46,15 @@ btnGenerate.addEventListener('click', function () {
         prezzoFinale = prezzoFinale - (prezzoFinale * 40 / 100)
     }
 
+    document.getElementById('passeggero').innerText = nameInput.value
+
+    document.getElementById('carrozza').innerText = (Math.floor(Math.random() * 11))
+
+
     console.log('km ', kmInput.value)
     console.log('nome ', nameInput.value)
     console.log('eta ', ageInput.value)
-    console.log('prezzo ', prezzoFinale)
+    console.log('prezzo ', prezzoFinale.toFixed(2))
 })
 
 btnDelete.addEventListener('click', function () {
@@ -65,3 +70,4 @@ btnDelete.addEventListener('click', function () {
     console.log('eta ', ageInput.value)
     console.log('prezzo ', prezzoFinale)
 })
+
