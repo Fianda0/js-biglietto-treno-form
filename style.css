@@ -1,0 +1,32 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    background-color: orangered;
+    padding: 1rem;
+}
+
+div {
+    padding: 1rem;
+
+    background-color: orange;
+}
+
+#km,
+#anni,
+#costo {
+    font-weight: bold;
+}
+
+
+h1 {
+    color: white;
+    padding: 1rem;
+} */
